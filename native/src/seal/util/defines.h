@@ -25,6 +25,7 @@ static_assert(sizeof(int) == 4, "Require sizeof(int) == 4");
 // Check that unsigned long long is 64 bits
 static_assert(sizeof(unsigned long long) == 8, "Require sizeof(unsigned long long) == 8");
 
+
 // Bounds for bit-length of all coefficient moduli
 #define SEAL_MOD_BIT_COUNT_MAX 61
 #define SEAL_MOD_BIT_COUNT_MIN 2
@@ -35,6 +36,8 @@ static_assert(sizeof(unsigned long long) == 8, "Require sizeof(unsigned long lon
 // Bounds for bit-length of user-defined coefficient moduli
 #define SEAL_USER_MOD_BIT_COUNT_MAX 60
 #define SEAL_USER_MOD_BIT_COUNT_MIN 2
+
+
 
 // Bounds for bit-length of the plaintext modulus
 #define SEAL_PLAIN_MOD_BIT_COUNT_MAX SEAL_USER_MOD_BIT_COUNT_MAX
